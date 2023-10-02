@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <main>
+      <div class="container-text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+          necessitatibus amet sunt, ipsa suscipit consectetur odit maxime,
+          reiciendis doloribus pariatur veniam quo assumenda aliquid. Aut iste
+          repellat odit explicabo voluptas.
+        </p>
+      </div>
+      <div class="container-carousel">
+        <div class="container-image">
+          <img
+            class="image-one"
+            src="./assets/pexels-asad-photo-maldives-3601453.jpg"
+            alt=""
+          />
+          <img
+            class="image-two"
+            src="./assets/pexels-johannes-plenio-2850287.jpg"
+            alt=""
+          />
+          <img
+            class="image-three"
+            src="./assets/pexels-ray-bilcliff-1475248.jpg"
+            alt=""
+          />
+        </div>
+        <div class="container-radio">
+          <button id="radio-one" class="carousel-radio"></button>
+          <button id="radio-two" class="carousel-radio"></button>
+          <button id="radio-three" class="carousel-radio"></button>
+        </div>
+        <button class="carousel__button carousel__button-left">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-arrow-left-circle"
+          >
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 8 8 12 12 16"></polyline>
+            <line x1="16" y1="12" x2="8" y2="12"></line>
+          </svg>
+        </button>
+        <button class="carousel__button carousel__button-right">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-arrow-right-circle"
+          >
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 16 16 12 12 8"></polyline>
+            <line x1="8" y1="12" x2="16" y2="12"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="container-text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+          necessitatibus amet sunt, ipsa suscipit consectetur odit maxime,
+          reiciendis doloribus pariatur veniam quo assumenda aliquid. Aut iste
+          repellat odit explicabo voluptas.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
