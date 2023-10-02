@@ -1,0 +1,136 @@
+/* --- CSS Reset --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+/* --- Custom CSS --- */
+body {
+  font-family: "Courier New", Courier, monospace;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .drawer-button {
+  background-color: blanchedalmond;
+  padding: 5px 10px;
+  border: 2px solid black;
+  position: fixed;
+  top: 50px;
+  right: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+body .drawer-button--animate ~ .drawer-backdrop-one {
+  transform: scale(20000%);
+}
+body .drawer-button--animate ~ .drawer-backdrop-two {
+  transform: scale(19000%) translateX(-3px);
+}
+body .drawer-button--animate ~ .drawer-backdrop-three {
+  transform: scale(18000%) translateX(-2px);
+}
+body .drawer-button--animate ~ .drawer-list-left {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-5px);
+}
+body .drawer-button--animate ~ .drawer-list-right {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-5px);
+}
+body .drawer-button p {
+  width: -moz-max-content;
+  width: max-content;
+}
+body .drawer-list-left {
+  padding: 25px;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  transition: all 0.3s ease-in-out;
+}
+body .drawer-list-left li {
+  list-style: none;
+}
+body .drawer-list-right {
+  padding: 25px;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 30%;
+  z-index: 5;
+  transition: all 0.3s ease-in-out 0.2s;
+}
+body .drawer-list-right li {
+  list-style: none;
+}
+body .drawer-backdrop-one {
+  background-color: blanchedalmond;
+  border-radius: 9999px;
+  height: 10px;
+  width: 10px;
+  position: fixed;
+  top: 50px;
+  right: 0;
+  transition: all 0.25s ease-in-out;
+}
+body .drawer-backdrop-two {
+  background-color: rebeccapurple;
+  border-radius: 9999px;
+  height: 10px;
+  width: 10px;
+  position: fixed;
+  top: 50px;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+body .drawer-backdrop-three {
+  background-color: tomato;
+  border-radius: 9999px;
+  height: 10px;
+  width: 10px;
+  position: fixed;
+  top: 50px;
+  right: 0;
+  transition: all 0.35s ease-in-out;
+}
+body p {
+  width: 300px;
+}/*# sourceMappingURL=style.css.map */
